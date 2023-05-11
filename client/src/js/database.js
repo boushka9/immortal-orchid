@@ -14,7 +14,7 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database 
 // put is for updating, post for adding ^ TODO is to add to db 
-export const puttDb = async (content) => {
+export const putDb = async (content) => {
   
   // Create connection to initiated DB 'jate', version 1
   const connectDb = await openDB('jate', 1);
