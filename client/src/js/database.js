@@ -13,8 +13,8 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database 
-// put is for updating, post for adding ^ TODO is to add to db, so changed to postDb and store.add()
-export const postDb = async (content) => {
+// put is for updating, post for adding ^ TODO is to add to db 
+export const puttDb = async (content) => {
   
   // Create connection to initiated DB 'jate', version 1
   const connectDb = await openDB('jate', 1);
@@ -23,9 +23,9 @@ export const postDb = async (content) => {
   const dbTx = connectDb.transaction('jate', 'readwrite');
 
   // Open new object store within db
-  const objStore = dbTx.objectStore('jate');
+  const store = dbTx.objectStore('jate');
 
-  // Use add method on the store oject to pass in and create the content 
+  // Use add method on the store object to pass in and create the content 
   const request = store.add({ value: content})
 
   // Confirm request to add to db went through 
@@ -42,7 +42,7 @@ export const getDb = async () => {
   const dbTx = connectDb.transaction('jate', 'readonly');
 
   // Open object store within jate db
-  const objStore = dbTx.objectStore('jate');
+  const store = dbTx.objectStore('jate');
 
   // Use getAll method to request everything in db store 
   const request = store.getAll();
