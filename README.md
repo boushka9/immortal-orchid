@@ -40,14 +40,15 @@
     5. Type anything you'd like into your newly installed text editor
   
 
-  ## Screenshots
+## Screenshots
 
-    <img src="./client/src/images/install-jate.png" alt="Install Just Another Text Editor" width="400"/>
+<div style="text-align: center;">
+<img src="./client/src/images/install-jate.png" alt="Install Just Another Text Editor" width="400"/>
 
-    <img src="./client/src/images/confirm-install.png" alt="Confirm JATE install" width="500"/>
+<img src="./client/src/images/confirm-install.png" alt="Confirm JATE install" width="500"/>
 
-    <img src="./client/src/images/store.png" alt="Stored thoughts" width="600"/> 
-
+<img src="./client/src/images/store.png" alt="Stored thoughts" width="600"/>
+</div>
 
 
   ## License
