@@ -1,6 +1,8 @@
 # JATE: Just Another Text Editor
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+  Deployed Application: https://cold-tea.herokuapp.com/
 
   ## Description
 
